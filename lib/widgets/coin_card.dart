@@ -2,6 +2,7 @@
 
 import 'package:flutter/material.dart';
 
+// ignore: must_be_immutable
 class CoinCard extends StatelessWidget {
   String name;
   String symbol;
@@ -89,13 +90,13 @@ class CoinCard extends StatelessWidget {
                 Text(
                   change.toDouble() < 0
                       ? change.toDouble().toStringAsFixed(3)
-                      : '+' + change.toDouble().toStringAsFixed(3),
+                      : '+${change.toDouble().toStringAsFixed(3)}',
                   style: TextStyle(color: Colors.white),
                 ),
                 Text(
                   changePercentage.toDouble() < 0
-                      ? changePercentage.toDouble().toString() + '%'
-                      : '+' + changePercentage.toDouble().toString() + '%',
+                      ? '${changePercentage.toDouble()}%'
+                      : '+${changePercentage.toDouble()}%',
                   style: TextStyle(color: Colors.white),
                 )
               ],

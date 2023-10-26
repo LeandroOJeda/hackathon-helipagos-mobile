@@ -24,7 +24,7 @@ class TotalBalance extends StatelessWidget {
               height: 15,
             ),
             const Text(
-              '\$99,99',
+              '\$0',
               style: TextStyle(
                   color: Colors.white,
                   fontSize: 30,
